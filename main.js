@@ -72,7 +72,7 @@ function highlightInterval() {
     else if (interval%30==21) {
         document.getElementById("i" + (interval)).style.color = "rgb(64, 64, 64)";
     }
-    else if (interval%30==0) {
+    else if (interval%30==0 && interval!=240) {
         set = set + 1;
         document.getElementById("set-count").innerHTML = set + "/8";
         document.getElementById("i" + (interval-9)).style.color = "rgb(253, 157, 154)";
