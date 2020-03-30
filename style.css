@@ -5,6 +5,7 @@
     white: rgb(255, 249, 216);
     light green: rgb(200, 201, 170);
     dark green: rgb(131, 176, 156);
+    purple: rgb(127, 67, 129);
 */
 
 body {
@@ -17,4 +18,76 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(249, 205, 173);
+    box-shadow: 0px 0px 3px rgb(64, 64, 64);
+    padding-bottom: 4px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: rgb(127, 67, 129);
+    color: rgb(255, 249, 216);
+    height: 6em;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    position: relative;
+    top: 16px;
+    text-align: center;
+}
+
+#clock {
+    display: none;
+}
+
+.button h1 {
+    position: relative;
+    top: 0.4em;
+}
+
+.button p {
+    position: relative;
+    bottom: 4px;
+}
+
+.button p {
+    color: rgb(180, 127, 182);
+}
+
+.set {
+    height: 32px;
+    position: relative;
+}
+
+.interval p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.interval {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.work {
+    background-color: rgb(131, 176, 156);
+    color: rgb(200, 201, 170);
+    width: 200px;
+    position: absolute;
+}
+
+.rest {
+    background-color: rgb(253, 67, 101);
+    color: rgb(253, 157, 154);
+    width: 100px;
+    position: absolute;
+    right: 0px;
+}
+
+.break {
+    background-color: rgb(253, 157, 154);
+    color: rgb(249, 205, 173);
+    margin-bottom: 4px;
+    text-align: center;
 }
