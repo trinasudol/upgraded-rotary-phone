@@ -36,6 +36,10 @@ function tick() {
         minutes = minutes - 1;
         if (minutes<0) {
             clearInterval(timer);
+            minutes = 17;
+            seconds = 20;
+            clock.style.display = "none";
+            start.style.display = "block";
         }
     }
     highlightInterval();
@@ -72,9 +76,11 @@ function highlightInterval() {
     else if (interval%30==21) {
         document.getElementById("i" + (interval)).style.color = "rgb(64, 64, 64)";
     }
-    else if (interval%30==0 && interval!=240) {
-        set = set + 1;
-        document.getElementById("set-count").innerHTML = set + "/8";
+    else if (interval%30==0) {
+        if (interval!=240) {
+            set = set + 1;
+            document.getElementById("set-count").innerHTML = set + "/8";
+        }
         document.getElementById("i" + (interval-9)).style.color = "rgb(253, 157, 154)";
         document.getElementById("i" + (interval-9)).style.backgroundColor = "rgb(253, 157, 154)";
     }
